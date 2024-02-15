@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+    <style>
+		*{
+			font-size:17px;
+		}
+        .red{
+            color:red;
+        }
+		h1{
+			font-size: 30px;
+		}
+    </style>
+	<link rel="stylesheet" href="../CSS/register.css" />
+</head>
+<body>
+    <h1 class="red"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;用户注册</h1>
+    <form method="GET" action="login.html" enctype="multipart/form-data">
+        <div class="size">
+            用户名：<input type="text" name="user" maxlength="8"/>
+        </div>
+		<br/>
+        <div>
+			<font size="4">
+				密&nbsp;&nbsp;&nbsp;&nbsp;码： <input type="password" name="pwd" maxlength="10"/>
+			</font>
+        </div>
+		<br/>
+        <div>
+            性 &nbsp;&nbsp;&nbsp;别：<input type="radio" name="gender" value="female">女
+                 <input type="radio" name="gender" value="male">男
+        </div>
+		<br/>
+		<div>
+			出生年月：<input type="date"/>
+		</div>
+		<br/>
+        <div>
+            爱好：<input type="checkbox" name="hobby" value="sport">运动
+                 <input type="checkbox" name="hobby" value="music">音乐
+                 <input type="checkbox" name="hobby" value="read">阅读
+                 <input type="checkbox" name="hobby" value="game">游戏
+                 <input type="checkbox" name="hobby" value="social">社交
+        </div>
+		<br/>
+        <div>
+            居住城市：
+            <select name="city">
+                <option value="shaanxi">陕西</option>
+				<option value="fujian" selected="selected">福建</option>
+                <option value="zhejiang">浙江</option>
+                <option value="xinjiang">新疆</option>
+                <option value="shanghai">上海</option>
+            </select>
+        </div>
+        <br/>
+        <div>
+            擅长的编程语言(按住Ctrl多选)：
+            <select  name="skill" multiple>
+                <option value="C">C</option>
+                <option value="C++">C++</option>
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="PHP">PHP</option>
+				<option value="Objective-C" disabled="disabled">Objective-C</option>
+            </select>
+        </div>
+        <br/>
+        <div>
+            更多信息：<textarea name="more" rows="4" cols="25"></textarea>
+        </div>
+		<br/>
+		<div>
+			提交简历能吸引更多心动嘉宾哦！<input type="file" />
+		</div>
+        <br/>
+		<div>
+			ps: 游戏线索就藏在此处，拿到你的关键词即可进入快速匹配!
+			<input type="hidden" value="
+			选择一种动物当做你在异世界的角色吧!
+			海豚/白鲸/羊驼/棕熊/豹/虎/大象/小熊猫
+			"/>
+		</div>
+		<br/>
+        <div>
+			<pre align="left">
+               <input type="reset" value="重置"/>        <input type="submit" value="提交"/>
+			</pre>
+        </div>
+    </form>
+</body>
+</html>
